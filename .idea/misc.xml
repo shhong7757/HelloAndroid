@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/activity_create_preset_timer.xml" value="0.3109375" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/activity_create_preset_timer_combination.xml" value="0.3109375" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/activity_create_timer.xml" value="0.3109375" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/activity_main.xml" value="0.3109375" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.29635416666666664" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/fragment_combine_preset_timer.xml" value="0.30885416666666665" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/fragment_create_new_preset_timer.xml" value="0.30885416666666665" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/fragment_create_preset_timer.xml" value="0.3109375" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/fragment_dashboard.xml" value="0.3109375" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/fragment_home.xml" value="0.3109375" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/fragment_notifications.xml" value="0.3109375" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/layout/fragment_preset_timer_list.xml" value="0.22" />
+        <entry key="..\:/Users/shhong7757/AndroidStudioProjects/HelloAndroid/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3109375" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
