@@ -23,6 +23,9 @@ class CreateNewPresetTimerViewModel : ViewModel() {
     private val _submittable = MutableLiveData<Boolean>().apply {
         value = false
     }
+    private val _title = MutableLiveData<String>().apply {
+        value = ""
+    }
 
     fun changeValue(type: TimerValueType, value: Number) {
         when (type) {
@@ -34,12 +37,20 @@ class CreateNewPresetTimerViewModel : ViewModel() {
         val h: Number = _hour.value ?: 0
         val m: Number = _minute.value ?: 0
         val s: Number = _second.value ?: 0
+        val t: String = _title.value ?: ""
 
-        _submittable.value = !(h == 0 && m == 0 && s == 0)
+        _submittable.value =
+            !(h == 0 && m == 0 && s == 0 && t !== "")
     }
 
+    fun changeTitle(text: String) {
+
+    }
+
+    val title: LiveData<String> = _title
     val hour: LiveData<Number> = _hour
     val minute: LiveData<Number> = _minute
     val second: LiveData<Number> = _second
     val submittable: LiveData<Boolean> = _submittable
+
 }

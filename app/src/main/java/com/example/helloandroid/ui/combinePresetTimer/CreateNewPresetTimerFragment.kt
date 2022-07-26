@@ -1,14 +1,18 @@
 package com.example.helloandroid.ui.combinePresetTimer
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.NumberPicker
+import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.ViewModelProvider
 import com.example.helloandroid.databinding.FragmentCreateNewPresetTimerBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.android.material.textfield.TextInputEditText
 
 class CreateNewPresetTimerFragment : BottomSheetDialogFragment() {
 
@@ -52,11 +56,24 @@ class CreateNewPresetTimerFragment : BottomSheetDialogFragment() {
             createPresetTimerViewModel.changeValue(TimerValueType.SECOND, i2)
         }
 
-        createPresetTimerViewModel.submittable.observe(this
+        createPresetTimerViewModel.submittable.observe(
+            this
         ) { value ->
-            val submitButton: Button = binding.submitPresetTimerButton
+            val submitButton: ImageButton = binding.savePresetTimerButton
             submitButton.isClickable = value
         }
+
+        val titleInput: TextInputEditText = binding.createPresetTimerTextInput
+        titleInput.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                TODO("Not yet implemented")
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+                val text = titleInput.text.toString()
+                createPresetTimerViewModel.changeTitle(text)
+            }
+        })
 
         return root
     }
